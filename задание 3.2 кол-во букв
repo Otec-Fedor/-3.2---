@@ -1,0 +1,30 @@
+Здравствуйте, Федор. Вот исправленный код:
+slovo = input('Введите слово: ')
+
+slovo = slovo.lower()  # Преобразовать слово в нижний регистр для учета всех букв
+
+glasnye = ('a', 'o', 'e', 'i', 'u')  # Список гласных букв
+
+kolvo_glasnyh = 0
+
+kolvo_soglasnyh = 0
+
+for i in slovo:
+
+    if i in glasnye:
+
+        kolvo_glasnyh += 1
+
+    elif i in soglasnye:
+
+        kolvo_soglasnyh += 1
+
+    else:
+
+        print('False')
+
+        exit()
+
+print('Количество гласных равно:', kolvo_glasnyh)
+
+print('Количество согласных равно:', kolvo_soglasnyh)
